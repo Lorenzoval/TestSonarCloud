@@ -1,10 +1,14 @@
 package org.lorenzoval;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class HelloWorld {
+	
+	private static final Logger logger = Logger.getLogger(HelloWorld.class.getName());
 
 	public static void main(String[] args) {
-		System.out.println("Hello world!");
-
+		logger.log(Level.INFO, "Hello World!");
 	}
 
 }
